@@ -20,3 +20,16 @@ A Biblioteca Virtual é um software pensado para simples gerenciamento de livros
 ### Busca por autor
 <img width="812" height="162" alt="busca-por-autor" src="https://github.com/user-attachments/assets/8b7d5837-133b-4ce8-a6d7-137173359e28" />
 
+## Compilando e executando
+O projeto já conta com um binário pré-compilado e pronto para usar, mas você é livre para fazer mudanças no código e recompilar o programa contendo suas mudanças.
+
+### macOS e GNU/Linux
+```
+g++ -std=c++11 livro.cpp banco.cpp main.cpp -o biblioteca -lsqlite3
+./biblioteca
+```
+### Windows (utilizando MinGW)
+```
+g++ -std=c++11 livro.cpp banco.cpp main.cpp -o biblioteca.exe -lsqlite3
+biblioteca.exe
+```
