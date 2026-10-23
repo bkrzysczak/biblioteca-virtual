@@ -33,3 +33,6 @@ g++ -std=c++11 livro.cpp banco.cpp main.cpp -o biblioteca -lsqlite3
 g++ -std=c++11 livro.cpp banco.cpp main.cpp -o biblioteca.exe -lsqlite3
 biblioteca.exe
 ```
+## E o banco de dados?
+Na primeira execução, o programa criará o arquivo `biblioteca.db` no diretório atual. As execuções seguintes irão buscar o banco dentro do diretório e abri-lo.
+O banco também pode ser aberto e inspecionado com softwares externos que trabalhem com SQLite.
